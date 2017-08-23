@@ -428,7 +428,8 @@ def requete_print(chemin, args=None, get=False):
     #return
     result = requete(chemin, args, get)
     if result:
-        pprint.pprint(result)
+        print(json.dumps(result))
+        #pprint.pprint(result)
     return result
 
 
